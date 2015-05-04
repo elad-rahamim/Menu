@@ -15,6 +15,10 @@
 		DD90CBE51AF80C4200274B2A /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBDE1AF80C4200274B2A /* MMDrawerController.m */; };
 		DD90CBE61AF80C4200274B2A /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBE11AF80C4200274B2A /* MMDrawerVisualState.m */; };
 		DD90CBE71AF80C4200274B2A /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBE31AF80C4200274B2A /* UIViewController+MMDrawerController.m */; };
+		DD90CBED1AF80D5700274B2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBEB1AF80D5700274B2A /* HomeViewController.swift */; };
+		DD90CBEE1AF80D5700274B2A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD90CBEC1AF80D5700274B2A /* HomeViewController.xib */; };
+		DD90CBF11AF80D6B00274B2A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBEF1AF80D6B00274B2A /* AboutViewController.swift */; };
+		DD90CBF21AF80D6B00274B2A /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD90CBF01AF80D6B00274B2A /* AboutViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		DD90CBE11AF80C4200274B2A /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		DD90CBE21AF80C4200274B2A /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		DD90CBE31AF80C4200274B2A /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		DD90CBEB1AF80D5700274B2A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DD90CBEC1AF80D5700274B2A /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		DD90CBEF1AF80D6B00274B2A /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		DD90CBF01AF80D6B00274B2A /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,7 @@
 		DD90CBD71AF80C2900274B2A /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				DD90CBE81AF80D4400274B2A /* Pages */,
 				DD90CBD81AF80C2900274B2A /* Resources */,
 			);
 			path = Apps;
@@ -152,6 +161,33 @@
 				DD90CBDA1AF80C4200274B2A /* Slide-left-menu-Bridging-Header.h */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		DD90CBE81AF80D4400274B2A /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				DD90CBE91AF80D4400274B2A /* About */,
+				DD90CBEA1AF80D4400274B2A /* Home */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		DD90CBE91AF80D4400274B2A /* About */ = {
+			isa = PBXGroup;
+			children = (
+				DD90CBEF1AF80D6B00274B2A /* AboutViewController.swift */,
+				DD90CBF01AF80D6B00274B2A /* AboutViewController.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		DD90CBEA1AF80D4400274B2A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DD90CBEB1AF80D5700274B2A /* HomeViewController.swift */,
+				DD90CBEC1AF80D5700274B2A /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +272,8 @@
 			files = (
 				DD90CBC21AF80AEE00274B2A /* LaunchScreen.xib in Resources */,
 				DD90CBBF1AF80AEE00274B2A /* Images.xcassets in Resources */,
+				DD90CBF21AF80D6B00274B2A /* AboutViewController.xib in Resources */,
+				DD90CBEE1AF80D5700274B2A /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +294,10 @@
 				DD90CBE61AF80C4200274B2A /* MMDrawerVisualState.m in Sources */,
 				DD90CBBD1AF80AEE00274B2A /* AppDelegate.swift in Sources */,
 				DD90CBE51AF80C4200274B2A /* MMDrawerController.m in Sources */,
+				DD90CBF11AF80D6B00274B2A /* AboutViewController.swift in Sources */,
 				DD90CBE71AF80C4200274B2A /* UIViewController+MMDrawerController.m in Sources */,
 				DD90CBE41AF80C4200274B2A /* MMDrawerBarButtonItem.m in Sources */,
+				DD90CBED1AF80D5700274B2A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
