@@ -11,6 +11,10 @@
 		DD90CBBF1AF80AEE00274B2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD90CBBE1AF80AEE00274B2A /* Images.xcassets */; };
 		DD90CBC21AF80AEE00274B2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD90CBC01AF80AEE00274B2A /* LaunchScreen.xib */; };
 		DD90CBCE1AF80AEF00274B2A /* Slide_left_menuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBCD1AF80AEF00274B2A /* Slide_left_menuTests.swift */; };
+		DD90CBE41AF80C4200274B2A /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBDC1AF80C4200274B2A /* MMDrawerBarButtonItem.m */; };
+		DD90CBE51AF80C4200274B2A /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBDE1AF80C4200274B2A /* MMDrawerController.m */; };
+		DD90CBE61AF80C4200274B2A /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBE11AF80C4200274B2A /* MMDrawerVisualState.m */; };
+		DD90CBE71AF80C4200274B2A /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBE31AF80C4200274B2A /* UIViewController+MMDrawerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,16 @@
 		DD90CBC71AF80AEF00274B2A /* Slide-left-menuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slide-left-menuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD90CBCC1AF80AEF00274B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD90CBCD1AF80AEF00274B2A /* Slide_left_menuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide_left_menuTests.swift; sourceTree = "<group>"; };
+		DD90CBDA1AF80C4200274B2A /* Slide-left-menu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Slide-left-menu-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD90CBDB1AF80C4200274B2A /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		DD90CBDC1AF80C4200274B2A /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		DD90CBDD1AF80C4200274B2A /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		DD90CBDE1AF80C4200274B2A /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		DD90CBDF1AF80C4200274B2A /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		DD90CBE01AF80C4200274B2A /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		DD90CBE11AF80C4200274B2A /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		DD90CBE21AF80C4200274B2A /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		DD90CBE31AF80C4200274B2A /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,7 @@
 		DD90CBB91AF80AEE00274B2A /* Slide-left-menu */ = {
 			isa = PBXGroup;
 			children = (
+				DD90CBD71AF80C2900274B2A /* Apps */,
 				DD90CBBC1AF80AEE00274B2A /* AppDelegate.swift */,
 				DD90CBBE1AF80AEE00274B2A /* Images.xcassets */,
 				DD90CBC01AF80AEE00274B2A /* LaunchScreen.xib */,
@@ -104,6 +119,39 @@
 				DD90CBCC1AF80AEF00274B2A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD90CBD71AF80C2900274B2A /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				DD90CBD81AF80C2900274B2A /* Resources */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		DD90CBD81AF80C2900274B2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD90CBD91AF80C2900274B2A /* Menu */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD90CBD91AF80C2900274B2A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DD90CBDB1AF80C4200274B2A /* MMDrawerBarButtonItem.h */,
+				DD90CBDC1AF80C4200274B2A /* MMDrawerBarButtonItem.m */,
+				DD90CBDD1AF80C4200274B2A /* MMDrawerController.h */,
+				DD90CBDE1AF80C4200274B2A /* MMDrawerController.m */,
+				DD90CBDF1AF80C4200274B2A /* MMDrawerController+Subclass.h */,
+				DD90CBE01AF80C4200274B2A /* MMDrawerVisualState.h */,
+				DD90CBE11AF80C4200274B2A /* MMDrawerVisualState.m */,
+				DD90CBE21AF80C4200274B2A /* UIViewController+MMDrawerController.h */,
+				DD90CBE31AF80C4200274B2A /* UIViewController+MMDrawerController.m */,
+				DD90CBDA1AF80C4200274B2A /* Slide-left-menu-Bridging-Header.h */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD90CBE61AF80C4200274B2A /* MMDrawerVisualState.m in Sources */,
 				DD90CBBD1AF80AEE00274B2A /* AppDelegate.swift in Sources */,
+				DD90CBE51AF80C4200274B2A /* MMDrawerController.m in Sources */,
+				DD90CBE71AF80C4200274B2A /* UIViewController+MMDrawerController.m in Sources */,
+				DD90CBE41AF80C4200274B2A /* MMDrawerBarButtonItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,9 +378,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Slide-left-menu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Slide-left-menu/Apps/Resources/Menu/Slide-left-menu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -336,9 +391,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Slide-left-menu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Slide-left-menu/Apps/Resources/Menu/Slide-left-menu-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -395,6 +452,7 @@
 				DD90CBD31AF80AEF00274B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD90CBD41AF80AEF00274B2A /* Build configuration list for PBXNativeTarget "Slide-left-menuTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +461,7 @@
 				DD90CBD61AF80AEF00274B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
