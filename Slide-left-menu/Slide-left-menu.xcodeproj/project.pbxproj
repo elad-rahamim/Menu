@@ -19,6 +19,8 @@
 		DD90CBEE1AF80D5700274B2A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD90CBEC1AF80D5700274B2A /* HomeViewController.xib */; };
 		DD90CBF11AF80D6B00274B2A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBEF1AF80D6B00274B2A /* AboutViewController.swift */; };
 		DD90CBF21AF80D6B00274B2A /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD90CBF01AF80D6B00274B2A /* AboutViewController.xib */; };
+		DD90CBF61AF80EDA00274B2A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBF41AF80EDA00274B2A /* MenuTableViewController.swift */; };
+		DD90CBF71AF80EDA00274B2A /* MenuTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD90CBF51AF80EDA00274B2A /* MenuTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		DD90CBEC1AF80D5700274B2A /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		DD90CBEF1AF80D6B00274B2A /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		DD90CBF01AF80D6B00274B2A /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		DD90CBF41AF80EDA00274B2A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		DD90CBF51AF80EDA00274B2A /* MenuTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		DD90CBD71AF80C2900274B2A /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				DD90CBF31AF80EBB00274B2A /* Menu-Apps */,
 				DD90CBE81AF80D4400274B2A /* Pages */,
 				DD90CBD81AF80C2900274B2A /* Resources */,
 			);
@@ -188,6 +193,15 @@
 				DD90CBEC1AF80D5700274B2A /* HomeViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		DD90CBF31AF80EBB00274B2A /* Menu-Apps */ = {
+			isa = PBXGroup;
+			children = (
+				DD90CBF41AF80EDA00274B2A /* MenuTableViewController.swift */,
+				DD90CBF51AF80EDA00274B2A /* MenuTableViewController.xib */,
+			);
+			path = "Menu-Apps";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +288,7 @@
 				DD90CBBF1AF80AEE00274B2A /* Images.xcassets in Resources */,
 				DD90CBF21AF80D6B00274B2A /* AboutViewController.xib in Resources */,
 				DD90CBEE1AF80D5700274B2A /* HomeViewController.xib in Resources */,
+				DD90CBF71AF80EDA00274B2A /* MenuTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +310,7 @@
 				DD90CBBD1AF80AEE00274B2A /* AppDelegate.swift in Sources */,
 				DD90CBE51AF80C4200274B2A /* MMDrawerController.m in Sources */,
 				DD90CBF11AF80D6B00274B2A /* AboutViewController.swift in Sources */,
+				DD90CBF61AF80EDA00274B2A /* MenuTableViewController.swift in Sources */,
 				DD90CBE71AF80C4200274B2A /* UIViewController+MMDrawerController.m in Sources */,
 				DD90CBE41AF80C4200274B2A /* MMDrawerBarButtonItem.m in Sources */,
 				DD90CBED1AF80D5700274B2A /* HomeViewController.swift in Sources */,
