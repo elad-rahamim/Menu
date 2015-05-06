@@ -14,6 +14,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+      open_menu()
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +23,25 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    func open_menu(){
+        
+        
+        let image = UIImage(named: "icon-menu.png") as UIImage?
+        let button   = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+        button.frame = CGRectMake(0, 0, 30, 30)
+        button.setImage(image, forState: .Normal)
+        button.addTarget(self, action: "open:", forControlEvents:.TouchUpInside)
+        var myCustomBackButtonItem:UIBarButtonItem = UIBarButtonItem(customView: button)
+        self.navigationItem.leftBarButtonItem  = myCustomBackButtonItem
+    }
+    
+    func open(sender:UIButton!){
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        appDelegate.Container!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
