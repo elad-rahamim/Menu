@@ -12,31 +12,31 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var navigationController: UINavigationController?
     var Container:MMDrawerController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         // Override point for customization after application 
         
+     
+        
+        
         //Page View
-        var HomeView = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        var HomeView: HomeViewController? = HomeViewController(nibName: "HomeViewController", bundle: nil)
         var AboutView = AboutViewController(nibName: "AboutViewController", bundle: nil)
         
         //Menu View
         var MenuView = MenuTableViewController(nibName: "MenuTableViewController", bundle: nil)
         
-        
-        
-        var Home_Page = UINavigationController(rootViewController: HomeView)
+        var Home_Page = UINavigationController(rootViewController: HomeView!)
         var LeftMenu = UINavigationController(rootViewController: MenuView)
         
-        Container = MMDrawerController(centerViewController: HomeView, leftDrawerViewController: LeftMenu)
+        Container = MMDrawerController(centerViewController: Home_Page, leftDrawerViewController: LeftMenu)
         Container!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
         Container!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
         
-        window!.rootViewController = Container
-        
-        
+        self.window!.rootViewController = Container
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
         return true

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2CD2BD1AF93F2900A79ABA /* icon-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2CD2BC1AF93F2900A79ABA /* icon-menu.png */; };
 		DD90CBBD1AF80AEE00274B2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90CBBC1AF80AEE00274B2A /* AppDelegate.swift */; };
 		DD90CBBF1AF80AEE00274B2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD90CBBE1AF80AEE00274B2A /* Images.xcassets */; };
 		DD90CBC21AF80AEE00274B2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD90CBC01AF80AEE00274B2A /* LaunchScreen.xib */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD2CD2BC1AF93F2900A79ABA /* icon-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-menu.png"; sourceTree = "<group>"; };
 		DD90CBB71AF80AEE00274B2A /* Slide-left-menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slide-left-menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD90CBBB1AF80AEE00274B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD90CBBC1AF80AEE00274B2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD2CD2BB1AF93F1300A79ABA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DD2CD2BC1AF93F2900A79ABA /* icon-menu.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		DD90CBAE1AF80AEE00274B2A = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +156,7 @@
 		DD90CBD81AF80C2900274B2A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DD2CD2BB1AF93F1300A79ABA /* Images */,
 				DD90CBD91AF80C2900274B2A /* Menu */,
 			);
 			path = Resources;
@@ -287,6 +298,7 @@
 				DD90CBC21AF80AEE00274B2A /* LaunchScreen.xib in Resources */,
 				DD90CBBF1AF80AEE00274B2A /* Images.xcassets in Resources */,
 				DD90CBF21AF80D6B00274B2A /* AboutViewController.xib in Resources */,
+				DD2CD2BD1AF93F2900A79ABA /* icon-menu.png in Resources */,
 				DD90CBEE1AF80D5700274B2A /* HomeViewController.xib in Resources */,
 				DD90CBF71AF80EDA00274B2A /* MenuTableViewController.xib in Resources */,
 			);
