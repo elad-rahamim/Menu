@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4C77434F-70A1-46DC-AB1E-2313979B0B0C</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Slide-left-menu</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>06996298AA5CB7FDB06A8D17372F04C2FCE0A038</key>
 		<string>https://github.com/elad-rahamim/Menu.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Slide-left-menu/Slide-left-menu.xcodeproj</string>
+	<string>Slide-left-menu/Slide-left-menu.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>06996298AA5CB7FDB06A8D17372F04C2FCE0A038</key>
